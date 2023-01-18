@@ -1,0 +1,44 @@
+html, body, #root {
+  height: 100%;
+}
+.app {
+  height: 100%;
+  padding: 0 350px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.buttons-control {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+.buttons-control__button {
+  padding: 8px;
+  margin: 0 5px;
+}
+
+.text-control {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.country-item {
+  margin-bottom: 5px;
+  padding-left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid gray;
+}
+.country-item__name {
+  margin-right: 10px;
+}
+.country-item__fullName {
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 250px;
+  text-overflow: ellipsis;
+}
