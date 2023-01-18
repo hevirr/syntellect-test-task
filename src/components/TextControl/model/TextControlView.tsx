@@ -18,7 +18,13 @@ const TextControlView = ({ vm, limit }: TextControlViewProps) => {
 
       <div className="countries-dropdown">
         {limitCountryItems(vm.autocompleteHints, limit).map((country, i) => {
-          return <CountryItem key={`${country.fullName}_${i}`} country={country} />;
+          return (
+            <CountryItem
+              onClick={() => vm.setInputValue(country.name)}
+              key={`${country.fullName}_${i}`}
+              country={country}
+            />
+          );
         })}
       </div>
     </div>
