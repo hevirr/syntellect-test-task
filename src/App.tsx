@@ -1,5 +1,6 @@
 import './App.css';
 import { FirstButtonsControl, SecondButtonsControl } from './components/ButtonsControl';
+import Third from './components/ButtonsControl/Third';
 import { FirstTextControl, SecondTextControl } from './components/TextControl';
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <div className="buttons-controls">
         <FirstButtonsControl />
         <SecondButtonsControl />
+        <Third />
       </div>
 
       <div className="text-controls">
